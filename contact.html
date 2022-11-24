@@ -7,17 +7,20 @@
       <meta name="description" content="Hi! I'm Jenny Papilla I am a IT Supervisor and have worked as a consultant. I am confident with my management skills, business acumen and knowledge in analyzation of processes are ideal for the position available in your company." />
       <meta name="keywords" content="Jenny Papilla, Porfolio, It Management, Supervisor" />
       <meta name="author" content="Jenny Papilla" />
-      <meta property="og:title" content="Jenny Papilla">
-      <meta property="og:url" content="https://jennypapilla.github.io/my/">
+      <meta property="og:title" content="Jenny Papilla - I am an IT Supervisor">
+      <meta property="og:url" content="https://github.com/jennypapilla/portfolio">
       <meta property="og:description" content="Hi! I'm Jenny Papilla I am a IT Supervisor and have worked as a consultant. I am confident with my management skills, business acumen and knowledge in analyzation of processes are ideal for the position available in your company.">
-      <meta property="og:image" content="https://jennypapilla.github.io/my/images/slide_1.jpg">
+      <meta property="og:image" content="https://jennypapilla.github.io/portfolio/images/slide_1.jpg">
+      <meta name="viewport" content="width=device-width, user-scalable=no">
       <link rel="shortcut icon" href="images/favicon.png">
-      <title>Jenny Papilla - Objective</title>
+      <title>Jenny Papilla</title>
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/all.min.css">
       <link rel="stylesheet" href="css/flexslider.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/toast.css">
+      <script src="js/toast.js"></script>
    </head>
    <body>
 
@@ -29,7 +32,7 @@
             </div>
          </div>
       </div>
-
+      
       <nav id="main-nav">
          <a href="#" class="js-nav-toggle nav-toggle active"><i></i></a>
          <div class="js-fullheight table">
@@ -43,11 +46,12 @@
                   <li><a href="gallery.html">Gallery</a></li>
                   <li><a href="contact.html">Contact</a></li>
                </ul>
+
                <p class="social-icon">
-                  <a href="https://www.facebook.com/1315504285" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                  <a href="#"><i class="fab fa-twitter-square"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/lizzymaguire123" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.instagram.com/jenipepot"><i class="fab fa-instagram"></i></a>
                   <a href="skype:jenel.alexa@gmail.com?chat"><i class="fab fa-skype"></i></a>
+                  <a href="mailto:jenn.papilla@gmail.com"><i class="fa-envelope fas"></i></a>
                </p>
             </div>
          </div>
@@ -73,15 +77,15 @@
                </div>
             </div>
          </header>
-
+		 
          <section id="banner" class="js-fullheight">
             <div class="flexslider js-fullheight">
 
                <ul class="list-unstyled ml-5 mt-3 position-relative social-links">
-                  <li class="mb-3"><a href="https://www.facebook.com/1315504285" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                  <li class="mb-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li class="mb-3"><a href="https://www.facebook.com/lizzymaguire123" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="mb-3"><a href="https://www.instagram.com/jenipepot""><i class="fab fa-instagram"></i></a></li>
                   <li class="mb-3"><a href="skype:jenel.alexa@gmail.com?chat"><i class="fab fa-skype"></i></a></li>
-                  <li class="mb-3"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li class="mb-3"><a href="mailto:jenn.papilla@gmail.com"><i class="fa-envelope fas"></i></a></li>
                </ul>
 
                <ul class="slides">
@@ -92,7 +96,7 @@
                            <div class="slider-text-inner">
                               <div class="desc slider-mar-top">
                                  <h2>I'm Jenny Papilla!</h2>
-                                 <h3>I am a <span>IT</span>
+                                 <h3>I am an <span>IT</span>
                                     <span id="typed-slide-1"></span>
                                     <span id="typed-strings-slide-1">
                                     <span>Supervisor</span>
@@ -111,7 +115,7 @@
             </div>
          </section>
 
-         <section id="contact" class="bg-light pt-0">
+         <section id="contact" class="bg-dark">
             <div class="container">
                <div class="row">
                   <div class="col-md-8 col-md-offset-2 text-center heading">
@@ -129,24 +133,20 @@
                         <li><i class="fas fa-map-marked-alt"></i>Dasmariñas, Cavite</li>
                         <li><i class="fas fa-phone-alt"></i>+63 960 575 3248</li>
                         <li><i class="fas fa-envelope"></i><a href="#">jenn.papilla@gmail.com</a></li>
-                        <li><i class="fas fa-globe"></i><a href="#">www.yoursite.com</a></li>
+                        <li><i class="fas fa-globe"></i><a href="https://jennypapilla.github.io/portfolio">jennypapilla.github.io/portfolio</a></li>
                      </ul>
                   </div>
                   <div class="col-md-7 col-md-push-1">
+		  <form id="my-form" action="https://formspree.io/f/mnqrypba" method="post">
                      <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Name">
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Email">
+                              <input type="email" name="email" class="form-control" placeholder="Email" required>
                            </div>
                         </div>
                         <div class="col-md-12">
                            <div class="form-group">
-                              <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+                              <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message" required></textarea>
                            </div>
                         </div>
                         <div class="col-md-12">
@@ -155,12 +155,13 @@
                            </div>
                         </div>
                      </div>
+					 </form>
                   </div>
                </div>
             </div>
          </section>
 
-          <footer>
+         <footer>
             <div id="footer">
                <div class="container">
                   <div class="row copy-right">
@@ -173,10 +174,10 @@
                            </div>
 						   
                         <p class="social-icon">
-                           <a href="https://www.facebook.com/1315504285" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                           <a href="#"><i class="fab fa-twitter-square"></i></a>
-                           <a href="#"><i class="fab fa-instagram"></i></a>
+                           <a href="https://www.facebook.com/lizzymaguire123" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                           <a href="https://www.instagram.com/jenipepot""><i class="fab fa-instagram"></i></a>
                            <a href="skype:jenel.alexa@gmail.com?chat"><i class="fab fa-skype"></i></a>
+                           <a href="mailto:jenn.papilla@gmail.com"><i class="fa-envelope fas"></i></a>
                         </p>
                      </div>
                   </div>
@@ -195,5 +196,41 @@
       <script src="js/imagesloaded.pkgd.min.js"></script>
       <script src="js/typed.min.js"></script>
       <script src="js/custom.js"></script>
+<script>
+    var form = document.getElementById("my-form");
+    async function handleSubmit(event) {
+      $('#preloader').show();	
+      event.preventDefault();
+      var data = new FormData(event.target); 
+      var status = document.getElementById("my-form-status");
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+	  mdtoast('Email sent!. I will contact you as soon as possible thanks.', { type: 'success' });	
+	  $('#preloader').hide();	
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+	      status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+	      $('#preloader').hide();    
+            } else {
+	      mdtoast('Oops! There was a problem submitting your form!.', { type: 'error' });  
+	      $('#preloader').hide();	    
+            }
+          })
+        }
+      }).catch(error => {
+	      mdtoast('Oops! There was a problem submitting your form!.', { type: 'error' });  
+	      $('#preloader').hide();
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
    </body>
 </html>
