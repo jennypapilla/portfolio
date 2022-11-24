@@ -269,7 +269,7 @@ hr {
 }
 
 .heading h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -485,7 +485,7 @@ hr {
 .heading-meta-sub {
   margin-bottom: 15px;
   display: block;
-  font-size: 80px;
+  font-size: 50px;
   text-transform: uppercase;
   color: #99999908;
   font-weight: 700;
@@ -504,7 +504,7 @@ hr {
   .heading-meta-sub {
     margin-bottom: 15px;
     display: block;
-    font-size: 48px;
+    font-size: 23px;
     text-transform: uppercase;
     color: #99999908;
     font-weight: 700;
@@ -991,7 +991,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   #main-nav ul li a {
-    font-size: 30px;
+    font-size: 6.4vw;
     padding: 10px 0;
   }
 }
@@ -1008,6 +1008,16 @@ hr {
 @media screen and (max-width: 768px) {
   #main-nav ul li {
     display: block;
+  }
+  .education {
+	margin-left: 23px !important;  
+  }
+  .core ul li {
+    font-size: 5.4vw !important;
+  }
+  .mb-20 ul li {
+    font-size: 5.4vw;
+    margin-left: -20px;
   }
 }
 
@@ -1730,7 +1740,7 @@ header .navbar-brand .social-icon a {
 #qualification .core {
     text-align: left;
     width: 100%;
-    height: 495px;
+    height: auto;
     border-radius: 23px;
     float: left;
     margin-bottom: 40px;
@@ -1742,7 +1752,7 @@ header .navbar-brand .social-icon a {
 #certification .core {
     text-align: left;
     width: 100%;
-    height: 358px;
+    height: auto;
     border-radius: 23px;
     float: left;
     margin-bottom: 40px;
@@ -2006,7 +2016,6 @@ header .navbar-brand .social-icon a {
   border-bottom: 4px solid #1aadb2;
   position: relative;
   padding: 10px 15px;
-  font-size: 14px;
 }
 
 #work .work-filter li:hover {
@@ -2022,7 +2031,6 @@ header .navbar-brand .social-icon a {
   cursor: pointer;
   font-weight: 700;
   padding: 10px 15px;
-  font-size: 14px;
 }
 
 #work .work {
@@ -2498,11 +2506,15 @@ input[type="text"] {
   }
 }
 
+.core ul li {
+	font-size: 1.4vw;
+}
 .education {
 	margin: 0;
     font-style: italic;
     font-size: initial;	
 	line-height: 23px;
+	text-align:left;
 }
 .slider-mar-top {
 	margin-top: 136px;	
