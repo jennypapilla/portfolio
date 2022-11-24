@@ -19,6 +19,8 @@
       <link rel="stylesheet" href="css/all.min.css">
       <link rel="stylesheet" href="css/flexslider.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/toast.css">
+      <script src="js/toast.min.js"></script>
    </head>
    <body>
 
@@ -584,7 +586,6 @@
                               <input type="submit" value="Send Message" class="btn btn-primary">
                            </div>
                         </div>
-			  <p id="my-form-status"></p>
                      </div>
 					 </form>
                   </div>
@@ -632,7 +633,6 @@
     
     async function handleSubmit(event) {
       event.preventDefault();
-      var status = document.getElementById("my-form-status");
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,
@@ -642,19 +642,19 @@
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+	  mdtoast('Email sent!. I will contact you as soon as possible thanks.', { type: 'success' });	
           form.reset()
         } else {
           response.json().then(data => {
             if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+	      mdtoast(data["errors"].map(error => error["message"]).join(", "), { type: 'error' });      
             } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
+	      mdtoast('Oops! There was a problem submitting your form!.', { type: 'error' });    
             }
           })
         }
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+	      mdtoast('Oops! There was a problem submitting your form!.', { type: 'error' });  
       });
     }
     form.addEventListener("submit", handleSubmit)
