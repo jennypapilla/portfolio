@@ -49,7 +49,7 @@
                   <a href="https://www.facebook.com/lizzymaguire123" target="_blank"><i class="fab fa-facebook-square"></i></a>
                   <a href="https://www.instagram.com/jenipepot"><i class="fab fa-instagram"></i></a>
                   <a href="skype:jenel.alexa@gmail.com?chat"><i class="fab fa-skype"></i></a>
-                  <a href="mailto:jenn.papilla@gmail.com"><i class="fa-envelope fas"></i></a>
+                  <a href="mailto:papilla.jennyr@gmail.com"><i class="fa-envelope fas"></i></a>
                </p>
             </div>
          </div>
@@ -77,13 +77,13 @@
          </header>
 		 
          <section id="banner" class="js-fullheight">
+		 <div id="particles-js"></div>
             <div class="flexslider js-fullheight">
-
                <ul class="list-unstyled ml-5 mt-3 position-relative social-links">
                   <li class="mb-3"><a href="https://www.facebook.com/lizzymaguire123" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                   <li class="mb-3"><a href="https://www.instagram.com/jenipepot""><i class="fab fa-instagram"></i></a></li>
                   <li class="mb-3"><a href="skype:jenel.alexa@gmail.com?chat"><i class="fab fa-skype"></i></a></li>
-                  <li class="mb-3"><a href="mailto:jenn.papilla@gmail.com"><i class="fa-envelope fas"></i></a></li>
+                  <li class="mb-3"><a href="mailto:papilla.jennyr@gmail.com"><i class="fa-envelope fas"></i></a></li>
                </ul>
 
                <ul class="slides">
@@ -257,7 +257,7 @@
                            <a href="https://www.facebook.com/lizzymaguire123" target="_blank"><i class="fab fa-facebook-square"></i></a>
                            <a href="https://www.instagram.com/jenipepot""><i class="fab fa-instagram"></i></a>
                            <a href="skype:jenel.alexa@gmail.com?chat"><i class="fab fa-skype"></i></a>
-                           <a href="mailto:jenn.papilla@gmail.com"><i class="fa-envelope fas"></i></a>
+                           <a href="mailto:papilla.jennyr@gmail.com"><i class="fa-envelope fas"></i></a>
                         </p>
                      </div>
                   </div>
@@ -276,5 +276,125 @@
       <script src="js/imagesloaded.pkgd.min.js"></script>
       <script src="js/typed.min.js"></script>
       <script src="js/custom.js"></script>
+      <script src="js/particle-animation.js"></script>
+<script>
+		particlesJS('particles-js', {
+			"particles": {
+				"number": {
+					"value": 50,
+					"density": {
+						"enable": true,
+						"value_area": 800
+					}
+				},
+				"color": {
+					"value": "#888"
+				},
+				"shape": {
+					"type": "circle",
+					"stroke": {
+						"width": 0,
+						"color": "#888"
+					},
+					"polygon": {
+						"nb_sides": 5
+					},
+					"image": {
+						"src": "img/github.svg",
+						"width": 100,
+						"height": 100
+					}
+				},
+				"opacity": {
+					"value": 0.5,
+					"random": false,
+					"anim": {
+						"enable": false,
+						"speed": 3,
+						"opacity_min": 0.1,
+						"sync": false
+					}
+				},
+				"size": {
+					"value": 5,
+					"random": true,
+					"anim": {
+						"enable": false,
+						"speed": 40,
+						"size_min": 0.1,
+						"sync": false
+					}
+				},
+				"line_linked": {
+					"enable": true,
+					"distance": 150,
+					"color": "#888",
+					"opacity": 0.4,
+					"width": 1
+				},
+				"move": {
+					"enable": true,
+					"speed": 6,
+					"direction": "none",
+					"random": false,
+					"straight": false,
+					"out_mode": "out",
+					"attract": {
+						"enable": false,
+						"rotateX": 600,
+						"rotateY": 1200
+					}
+				}
+			},
+			"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+					"onhover": {
+						"enable": true,
+						"mode": "repulse"
+					},
+					"onclick": {
+						"enable": true,
+						"mode": "push"
+					},
+					"resize": true
+				},
+				"modes": {
+					"grab": {
+						"distance": 400,
+						"line_linked": {
+							"opacity": 1
+						}
+					},
+					"bubble": {
+						"distance": 400,
+						"size": 40,
+						"duration": 2,
+						"opacity": 8,
+						"speed": 3
+					},
+					"repulse": {
+						"distance": 200
+					},
+					"push": {
+						"particles_nb": 4
+					},
+					"remove": {
+						"particles_nb": 2
+					}
+				}
+			},
+			"retina_detect": true,
+			"config_demo": {
+				"hide_card": false,
+				"background_color": "#b61924",
+				"background_image": "",
+				"background_position": "50% 50%",
+				"background_repeat": "no-repeat",
+				"background_size": "cover"
+			}
+		}
+		);
+	</script>
    </body>
 </html>
