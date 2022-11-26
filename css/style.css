@@ -1188,7 +1188,7 @@ header {
     padding-bottom: 0px;
     background-color: #000000b3;
     border-bottom: 1px #8080807a solid;
-    z-index: 2;
+    z-index: 3;
     transition: 1s;
 }
 
