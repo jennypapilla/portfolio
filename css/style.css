@@ -841,6 +841,7 @@ hr {
 #back-to-top {
     position: fixed;
     bottom: 25px;
+    z-index: 1;
     right: 25px;
     color: #1aadb2;
     background: transparent;
