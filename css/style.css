@@ -433,6 +433,12 @@ hr {
     border-radius: 50%;
     border: 3px solid #1aadb2;
   }
+#qualification .core {
+    height: auto;
+}
+#certification .core {
+    height: auto;
+	}
 }
 
 .header-page h2:before, 
@@ -740,8 +746,10 @@ hr {
 }
 
 .img-fluid {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
+    border: 5px #8080803d solid;
+    border-radius: 23px;
 }
 
 
@@ -1753,7 +1761,7 @@ header .navbar-brand .social-icon a {
 
 #qualification .core {
     text-align: left;
-    width: 100%;
+    width: 480px;
     height: auto;
     border-radius: 23px;
     float: left;
@@ -1766,7 +1774,7 @@ header .navbar-brand .social-icon a {
 #certification .core {
     text-align: left;
     width: 100%;
-    height: auto;
+    height: 330px;
     border-radius: 23px;
     float: left;
     margin-bottom: 40px;
