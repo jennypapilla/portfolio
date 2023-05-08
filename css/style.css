@@ -434,7 +434,7 @@ hr {
     border: 3px solid #1aadb2;
   }
 #qualification .core {
-    height: auto;
+    height: auto !important;
 }
 #certification .core {
     height: auto;
@@ -1762,7 +1762,7 @@ header .navbar-brand .social-icon a {
 #qualification .core {
     text-align: left;
     width: 100%;
-    height: 480px;
+    height: auto;
     border-radius: 23px;
     float: left;
     margin-bottom: 40px;
@@ -2526,10 +2526,6 @@ input[type="text"] {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
-}
-
-.core ul li {
-	font-size: 1.4vw;
 }
 .education {
 	margin: 0;
